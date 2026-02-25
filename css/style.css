@@ -20,6 +20,20 @@ body {
   overflow: hidden;
 }
 
+.header {
+  width: 300px;
+  height: 40px;
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  top: 0%;
+  position: absolute;
+  display: none; /* Reveal this on panel 2 onwards*/
+}
+
 .panel-1 {
   width: 300px;
   height: 552px;
@@ -89,18 +103,10 @@ body {
 .progress-bar {
   width: 300px;
   height: 10px;
-  background-color: #000;
+  background-color: #f0f0f0;
   top: 590px;
   position: absolute;
   border: none;
-}
-
-.play-button {
-  background-color: #000;
-}
-
-.play-icon {
-  fill: #fff;
 }
 
 @font-face {
