@@ -1,0 +1,15 @@
+.banner {
+  width: 300px;
+  height: 600px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background-color: #000;
+  top: 590px;
+  position: absolute;
+  border: none;
+}
