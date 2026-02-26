@@ -148,6 +148,29 @@ body {
   color: #fff;
   align-self: flex-end;
   cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+.panel-3 {
+  width: 300px;
+  height: 280px;
+  background-color: #fff;
+  top: 1450px;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel-3 .end-frame-text-line-1,
+.panel-3 .end-frame-text-line-2,
+.panel-3 .end-frame-text-line-3 {
+  font-family: "Neue Haas Display Bold";
+  font-size: 30px;
+  line-height: 55px;
 }
 
 .playback-controls {
