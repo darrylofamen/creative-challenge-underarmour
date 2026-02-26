@@ -91,8 +91,8 @@ body {
   flex-direction: column;
 
   /* TO DO: Delete later */
-  /* border: 1px solid #000;
-  overflow: hidden; */
+  /* border: 1px solid #000; */
+  /* overflow: hidden; */
 }
 
 .panel-2 .img {
@@ -117,8 +117,8 @@ body {
   height: 100%;
   padding: 30px 20px;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .panel-2 .details .product-details-line1 {
@@ -139,7 +139,7 @@ body {
   line-height: 50px;
 }
 
-.panel-2 .details .cta {
+.panel-2 .cta {
   width: 140px;
   height: 44px;
   border-radius: 9999px;
@@ -150,6 +150,10 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Neue Haas Grotesk Display Pro";
+  position: absolute;
+
+  top: 440px;
+  left: 140px;
 }
 
 .panel-3 {
@@ -161,7 +165,7 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
 
