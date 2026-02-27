@@ -16,8 +16,8 @@ body {
   width: 300px;
   height: 600px;
   position: relative;
-  /* border: 1px solid #000; */
-  /* overflow: hidden; */
+  border: 1px solid #000;
+  overflow: hidden;
 }
 
 .header {
@@ -30,27 +30,35 @@ body {
   /* z-index: 20; */
   top: 0%;
   position: absolute;
-  display: none; /* Reveal this on panel 2 onwards*/
+  display: flex;
+}
+
+.logo {
+  width: 300px;
+  height: 600px;
+  background: #f0f0f0;
+}
+
+.logo svg:nth-child(1) {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 250px;
+}
+
+.logo svg:nth-child(2) {
+  top: 338px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0%);
 }
 
 .panel-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 300px;
   height: 552px;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.panel-1 .logo {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
-  z-index: 1;
 }
 
 .panel-1 .overlay-1,
@@ -59,8 +67,6 @@ body {
   height: 552px;
   position: absolute;
   left: 0;
-
-  display: none;
 }
 
 .panel-1 .overlay-1 {
@@ -102,6 +108,7 @@ body {
   width: 300px;
   min-height: 280px;
   white-space: nowrap;
+  /* z-index: 20; */
   /* margin: 6px 22px; */
 }
 
@@ -121,19 +128,19 @@ body {
   flex-direction: column; */
 }
 
-.panel-2 .details .product-details-line1 {
+.panel-2 .details .product-details-line-1 {
   font-family: "Neue Haas Display Bold";
   font-size: 26.7px;
   line-height: 49px;
 }
 
-.panel-2 .details .product-details-line2 {
+.panel-2 .details .product-details-line-2 {
   font-family: "Neue Haas Display Regular";
   font-size: 18px;
   line-height: 33px;
 }
 
-.panel-2 .details .product-details-line3 {
+.panel-2 .details .product-details-line-3 {
   font-family: "Neue Haas Display Bold";
   font-size: 27.3px;
   line-height: 50px;
@@ -154,27 +161,32 @@ body {
 
   top: 440px;
   left: 140px;
+
+  /* z-index: 20; */
 }
 
-.panel-3 {
+.end-frame {
   width: 300px;
   height: 280px;
   background-color: #fff;
-  top: 1450px;
+  top: 0px;
+  left: 0px;
   position: absolute;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  /* opacity: 0; */
 }
 
-.panel-3 .end-frame-text-line-1,
-.panel-3 .end-frame-text-line-2,
-.panel-3 .end-frame-text-line-3 {
+.panel-2 .end-frame-text .end-frame-text-line-1,
+.panel-2 .end-frame-text .end-frame-text-line-2,
+.panel-2 .end-frame-text .end-frame-text-line-3 {
   font-family: "Neue Haas Display Bold";
   font-size: 30px;
   line-height: 55px;
+  /* transform: translateX(-250px); */
 }
 
 .playback-controls {
@@ -184,6 +196,8 @@ body {
   background-color: #fff;
   top: 552px;
   display: flex;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .play-button,
