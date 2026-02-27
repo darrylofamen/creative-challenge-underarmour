@@ -35,7 +35,7 @@ body {
 
 .logo {
   width: 300px;
-  height: 600px;
+  height: 552px;
   background: #f0f0f0;
 }
 
@@ -77,7 +77,7 @@ body {
 
 .panel-1 .overlay-2 {
   width: 337.5px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   z-index: 9;
 }
 
@@ -210,15 +210,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-.progress-bar {
+.scrub {
   width: 300px;
   height: 10px;
-  background-color: #f0f0f0;
-  top: 590px;
   position: absolute;
-  border: none;
+  top: 590px;
+  left: 0px;
+}
+
+.scrub-bar {
+  position: absolute;
+  width: 300px;
+  height: 10px;
+  margin: 0;
+  background: #f0f0f0;
+  height: 10px;
+  width: 300px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.scrub-bar::-webkit-slider-thumb {
+  width: 4px;
+  height: 12px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #fff;
 }
 
 @font-face {
