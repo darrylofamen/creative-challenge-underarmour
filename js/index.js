@@ -149,6 +149,18 @@ function addProductScene(
       { autoAlpha: 1, scale: 1, ease: Back.easeOut.config(1.5) },
       "-=0.5"
     );
+  } else {
+    tl.to(
+      cta,
+      0.06,
+      {
+        rotation: 2,
+        repeat: 3,
+        yoyo: true,
+        ease: Power1.easeOut,
+      },
+      "-=0.1"
+    );
   }
 
   // Leave scene — fade out image + details
@@ -164,7 +176,7 @@ function init() {
       progressBar.step = 0.001;
       progressBar.value = tl.progress();
       progressBar.style.background = updateProgressGradient(tl.progress());
-      console.log(tl.progress());
+      console.log(tl.time());
     },
   });
 
